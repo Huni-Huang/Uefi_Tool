@@ -1,15 +1,21 @@
-First time using git flow
+First time using git flow and push：
+$ open cmd in windows
+$ cd D:\
+$ makedir UEFI folder in D:\
+$ cd UEFI
+$ git init
+$ copy test_1 to Uefi_tool folder
+$ git add *
+$ git commit -m "xxxxxxx"
+$ git push
+
+Clone：
+$ git clone https://github.com/Huni-Huang/Uefi_Tool.git
 
 
-open cmd in windows
-cd D:\
-makedir UEFI folder in D:\
-cd UEFI
-git init
-copy test_1 to Uefi_tool folder
-git add *
-git commit -m "xxxxxxx"
-git push
-
-
-git clone https://github.com/Huni-Huang/Uefi_Tool.git
+Remove folder：
+$ git pull origin master 将远程仓库里面的项目拉下来
+$ dir  查看有哪些文件夹
+$ git rm -r --cached target  删除target文件夹
+$ git commit -m '删除了target'  提交,添加操作说明
+$ git push -u origin master 将本次更改更新到github项目上去
