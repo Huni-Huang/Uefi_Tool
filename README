@@ -1,1 +1,10 @@
+First time using git flow
+open cmd in windows
+cd D:\
+makedir UEFI folder in D:\
+cd UEFI
+git init
+copy test_1 to UEFI folder
+git add test_1 
+
 git clone https://github.com/Huni-Huang/Uefi_Tool.git
