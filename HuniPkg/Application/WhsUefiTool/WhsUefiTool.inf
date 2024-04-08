@@ -1,0 +1,72 @@
+##  @file
+#
+# This is the UEFI Test and Debug application
+#
+# WHS UEFI Test tool for WHS Project
+# ReadMsrTool.c is Read MSR register Module
+# ----------------------------
+# v1.0 @11/02/2022 by Guangyuan Huang
+# ----------------------------
+# Email: guangyuanx.huang@intel.com
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = WhsUefiTool
+  FILE_GUID                      = 63856213-CD34-4473-B833-1439BBA93DF4
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  WhsUefiTool.c
+  WhsUefiTool.h
+  WhsUefiTool.uni
+  ReadMsrTool/ReadMsrTool.c
+  ReadMsrTool/ReadMsrTool.h
+  CpuidTool/Cpuid.c
+  CpuidTool/Cpuid.h
+  IOMMUVal/IOMMUVal.c
+  IOMMUVal/IOMMUVal.h
+  SmbiosViewStrings.uni
+
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+  HuniPkg/HuniPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  BaseLib
+  ShellLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  UefiApplicationEntryPoint
+  DebugLib
+  ShellCommandLib
+  FileHandleLib
+  HiiLib
+  PcdLib
+  PrintLib
+  UefiRuntimeServicesTableLib
+  SortLib
+  UefiShellDebug1CommandsLib
+
+[Protocols]
+  gEdkiiIoMmuProtocolGuid                     ## CONSUMES
+  gDmatransferProtocolGuid
+
+[FeaturePcd]
+  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintEnable   ## CONSUMES
+
+
+[FixedPcd]
+
+
+[Guids]
+  gWhsDebugHiiGuid

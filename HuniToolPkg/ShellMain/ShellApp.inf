@@ -1,0 +1,22 @@
+[Defines]
+  INF_VERSION       = 0x00010006
+  BASE_NAME         = ShellApp
+  FILE_GUID         = 28F3D982-E876-127C-FB20-2D2FB318C308
+  MODULE_TYPE       = UEFI_APPLICATION
+  VERSION_STRING    = 1.0
+  ENTRY_POINT       = ShellCEntryLib
+
+[Sources]
+  ShellApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  UefiBootServicesTableLib
+  UefiLib
+
+[BuildOptions]
+  MSFT:*_*_*_CC_FLAGS = /w

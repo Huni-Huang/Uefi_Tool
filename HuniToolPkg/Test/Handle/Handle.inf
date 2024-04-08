@@ -1,0 +1,38 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Handle
+  FILE_GUID                      = AA4F2A02-96E8-4BF5-AA11-220733394998
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+[Sources.common]
+  Handle.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  NB2766BoardPkg_Timi/Project.dec
+  ShellPkg/ShellPkg.dec
+
+
+[Guids]
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  BaseLib
+  PrintLib
+  HandleParsingLib
+  ShellLib
+  ShellCommandLib
+  TimerLib
+
+
+
+[Protocols]
+gEfiSimpleTextInProtocolGuid
+gEfiLoadedImageProtocolGuid

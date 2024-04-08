@@ -1,0 +1,26 @@
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = HuniPkg
+  PACKAGE_GUID                   = A0D76D92-23D2-1DC9-2E22-F2FEBE81FAF1
+  PACKAGE_VERSION                = 1.00
+
+[Includes]
+  Include
+
+[LibraryClasses]
+  ## @libraryclass   provides the AcpiView command
+  AcpiViewCommandLib|Include/Library/AcpiViewCommandLib.h
+
+[Guids]
+  gWhsDebugHiiGuid        = {0x25f200bb, 0xd8cb, 0x470a, {0xbf, 0x51, 0xe7, 0xd1, 0x62, 0xd2, 0x2e, 0x6f}}
+
+[Protocols]
+## Include/Protocol/IoMmu.h
+  gEdkiiIoMmuProtocolGuid = { 0x4e939de9, 0xd948, 0x4b0f, { 0x88, 0xed, 0xe6, 0xe1, 0xce, 0x51, 0x7c, 0x1e } }
+## Include/Protocol/Dwaxidmac.h
+  gDmatransferProtocolGuid = {0x1ee9447d, 0x85de, 0x467e, {0x9d, 0xed, 0x33, 0x96, 0xe3, 0xa1, 0xfa, 0x58}}
+[PcdsFeatureFlag]
+  
+
+[PcdsFixedAtBuild]
+ 

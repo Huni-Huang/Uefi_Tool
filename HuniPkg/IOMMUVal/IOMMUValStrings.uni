@@ -1,0 +1,24 @@
+// /**
+//
+// Copyright (c) 2005 - 2018, Intel Corporation. All rights reserved.<BR>
+// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.<BR>
+// (C) Copyright 2015-2019 Hewlett Packard Enterprise Development LP<BR>
+// SPDX-License-Identifier: BSD-2-Clause-Patent
+//
+// Module Name:
+//
+// UefiShellDebug1CommandsLib.uni
+//
+// Abstract:
+//
+// String definitions for UEFI Shell 2.0 Debug1 profile SmBiosView command
+//
+//
+// **/
+/=#
+#langdef   en-US "english"
+#string STR_IOMMUVAL_READ_INDEX_VALUE_METHOD               #language en-US "Index=%d,Value32=0x%x,\n"
+#string STR_IOMMUVAL_SOURCE_ADDR_METHOD               #language en-US "AddressSrc=0x%x,\n"
+#string STR_IOMMUVAL_DESTINATION_ADDR_METHOD               #language en-US "AddressDes=0x%x,\n"
+#string STR_IOMMUVAL_SOURCE_VALUE_METHOD               #language en-US "Index=%d,SrcValue=0x%x,\n"
+#string STR_IOMMUVAL_DESTINATION_VALUE_METHOD               #language en-US "Index=%d,DesValue=0x%x,\n"

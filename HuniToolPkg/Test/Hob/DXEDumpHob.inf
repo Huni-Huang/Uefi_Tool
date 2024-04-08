@@ -1,0 +1,37 @@
+[Defines] 
+  INF_VERSION                             = 0x00010005 
+  BASE_NAME                               = DXEDumpHob 
+  FILE_GUID                               = 69E6DE6D-F09F-485f-9937-EB70FDCFC82F
+  MODULE_TYPE                             = UEFI_APPLICATION
+  VERSION_STRING                          = 1.0
+  ENTRY_POINT                             = UefiMain 
+  
+[Sources] 
+  DXEDumpHob.c
+  CreateHob.h 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  NB2766BoardPkg_Timi/Project.dec
+  
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  DevicePathLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  UefiLib
+  HobLib
+  UefiApplicationEntryPoint
+  UefiRuntimeServicesTableLib
+
+
+[Guids]
+
+
+
+[Protocols]

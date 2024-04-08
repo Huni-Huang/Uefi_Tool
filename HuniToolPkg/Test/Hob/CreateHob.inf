@@ -1,0 +1,28 @@
+[Defines] 
+  INF_VERSION                            = 0x00010006 
+  BASE_NAME                              = CreateHobHob 
+  FILE_GUID                              = 6BE6DE6D-FB9E-485f-9A37-EB70FDCFC82B
+  MODULE_TYPE                            = PEIM
+  VERSION_STRING                         = 1.0
+  ENTRY_POINT                            = CreateHobEntry 
+  
+[Sources] 
+  CreateHob.c 
+  
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  NB2766BoardPkg_Timi/Project.dec
+  
+[LibraryClasses]
+  BaseLib
+  PeimEntryPoint
+  BaseMemoryLib
+  DebugLib
+  PeiServicesLib
+  DebugLib
+
+
+[depex]
+  TRUE
