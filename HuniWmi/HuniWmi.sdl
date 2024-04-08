@@ -1,0 +1,16 @@
+TOKEN
+	Name  = "Huni_WMI_SUPPORT"
+	Value  = "1"
+	TokenType = Boolean
+	TargetMAK = Yes
+	Master = Yes
+	Help  = "Main switch to enable Huni WMI support in Project"
+End
+
+
+ELINK
+    Name  = "OemPkg/HuniWmi/HuniWmi.asl"
+    Parent  = "SAMSUNG_DSDT_AFTER_PCI_TREE_ASL_INCLUDE_FILE"
+    Help  = "Link the ASL file into DSDT.asl."
+    InvokeOrder = AfterParent
+End

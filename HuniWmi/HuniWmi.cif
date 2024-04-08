@@ -1,0 +1,11 @@
+<component>
+	name = "HuniWmi"
+	category = ModulePart
+	LocalRoot = "OemPkg\HuniWmi"
+	RefName = "HuniWmi"
+
+[files]
+"HuniWmi.sdl"
+"HuniWmi.asl"
+"HuniWmi.h"
+<endComponent>

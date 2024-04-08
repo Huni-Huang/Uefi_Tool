@@ -1,0 +1,32 @@
+[WMI,
+Dynamic,
+Provider("WmiProv"),
+Locale("MS\\0x409"),
+Description("Class used for write Memory data"),     
+guid("35D15EA0-107C-458D-BE4A-D78E4A494D8A")
+]
+class HuniWMIPortInterface
+{
+    [key, read]
+        string InstanceName;
+    [read]
+        boolean Active;
+
+    [WmiMethodId(1),
+     Implemented,
+     read,write,
+     Description("Method used for write Memory.")
+    ]void WMIMemory1([in]uint32 Data);
+
+    [WmiMethodId(2),
+     Implemented,
+     read,write,
+     Description("Method used for write Memory.")
+    ]void WMIMemory2([in]uint32 Data);
+
+    [WmiMethodId(3),
+     Implemented,
+     read,write,
+     Description("Method used for write Memory.")
+    ]void WMIMemory3([in]uint32 Data);
+};
