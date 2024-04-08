@@ -1,0 +1,12 @@
+luobing 2007-4-18
+对提取LOGO的说明:
+    当前的程序(tilllogo.c)是为945sybios而写的。在945sybios中，定义了三种logo:sylogo、esclogo、FDlogo。前两个是已经固定的，不能改了，后面的FDlogo是专门为方正定制的，也可以改为别的OEM厂商LOGO，提取步骤如下：
+
+1 使用PS或者其他图象工具改造LOGO：24X24,纯蓝色底(主要因为是logo的背景是蓝色的)
+2 PS一般存为24位真彩色bmp的，使用ACDSEE的FotoCanvas Lite转为256色。注意如果文件比1.6K小，那 
+  么bmp是压缩的。
+3 如果文件小于1.6K,使用系统自带的画图程序，随便改动，将其另存为sylogo.bmp。(1.6K了)
+4 使用ACDSEE的FotoCanvas Lite，转为16色，存储。再转为256色，存储。
+5 使用tilllogo.exe,提取图象信息。
+6 修改SY_DATA中logopic和logo_mask相应的区域。
+ 

@@ -1,0 +1,57 @@
+//// @file
+//
+// TODO: Brief Description of UEFI Driver MyWizardDriver
+//  
+// TODO: Detailed Description of UEFI Driver MyWizardDriver
+//
+// TODO: Copyright for UEFI Driver MyWizardDriver
+//  
+// TODO: License for UEFI Driver MyWizardDriver
+//
+////
+#include "MyWizardDriverNVDataStruc.h"
+// formset
+//   guid     = {0xcc5ebb4f, 0xf562, 0x11e7, {0x92, 0x11, 0xf4, 0x8c, 0x50, 0x49, 0xe3, 0xa4}},
+//   title    = STRING_TOKEN(STR_SAMPLE_FORM_SET_TITLE),
+//   help     = STRING_TOKEN(STR_SAMPLE_FORM_SET_HELP),
+
+//   form formid = 1, title = STRING_TOKEN(STR_SAMPLE_FORM1_TITLE);
+//   endform;
+
+// endformset;
+
+//robin add 2020-06-26 10:06:14  begin ===========================
+formset
+  guid = MYWIZARDDRIVER_FORMSET_GUID,
+  title = STRING_TOKEN(STR_SAMPLE_FORM_SET_TITLE), //"My Wizard DriverSample Formset"
+  help = STRING_TOKEN(STR_SAMPLE_FORM_SET_HELP), //"Help for Sample Formset"
+  classguid = EFI_HII_PLATFORM_SETUP_FORMSET_GUID,
+//
+// Define a Buffer Storage (EFI_IFR_VARSTORE)
+//
+  varstore MYWIZARDDRIVER_CONFIGURATION, // This is the data structure type
+//varid = CONFIGURATION_VARSTORE_ID, // Optional VarStore ID
+  name = MWD_IfrNVData, // Define  referenced name in vfr
+  guid = MYWIZARDDRIVER_FORMSET_GUID; // GUID of this buffer storage
+
+form formid = 1, title = STRING_TOKEN(STR_SAMPLE_FORM1_TITLE); // "My Wizard Driver"
+  subtitle text = STRING_TOKEN(STR_SUBTITLE_TEXT); //"My Wizard DriverConfiguration"
+  subtitle text = STRING_TOKEN(STR_SUBTITLE_TEXT2); //"Device XYZ Configuration"
+//
+// Define a checkbox to enable / disable the device
+//
+  checkbox varid =MWD_IfrNVData.MyWizardDriverChooseToEnable,
+      prompt =STRING_TOKEN(STR_CHECK_BOX_PROMPT),  //"Enable My XYZ Device"
+      help = STRING_TOKEN(STR_CHECK_BOX_HELP), //"This is the help message for the enable My XYZ ...
+//
+// CHECKBOX_DEFAULT indicate this checkbox is marked with
+// EFI_IFR_CHECKBOX_DEFAULT
+//
+      flags = CHECKBOX_DEFAULT ,
+      key = 0,
+      default = 1,
+    endcheckbox;
+  endform;
+endformset;
+//robin add   end===========================================
+

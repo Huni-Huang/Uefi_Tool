@@ -1,0 +1,86 @@
+﻿            PATH      = C:\vUDK2018\edk2\BaseTools\Bin\Win32;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\MSBuild\14.0\bin;C:\Program Files (x86)\MSBuild\14.0\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\VCPackages;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Performance Tools;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\NASM\;C:\iasl\;C:\adb\;C:\Users\luo__\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Users\luo__\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luo__\AppData\Local\GitHubDesktop\bin;C:\Users\luo__\AppData\Local\Microsoft\WindowsApps;;
+  
+       WORKSPACE      = C:\vUDK2018\edk2
+  EDK_TOOLS_PATH      = C:\vUDK2018\edk2\BaseTools
+  BASE_TOOLS_PATH     = C:\vUDK2018\edk2\BaseTools
+   EDK_TOOLS_BIN      = C:\vUDK2018\edk2\BaseTools\Bin\Win32
+       CONF_PATH      = C:\vUDK2018\edk2\Conf
+  
+  
+  !!! WARNING !!! PYTHON_FREEZER_PATH environment variable is not set.
+  Setup environment to run Python scripts directly.
+  
+                 PATH = C:\vUDK2018\edk2\BaseTools\BinWrappers\WindowsLike;C:\vUDK2018\edk2\BaseTools\Bin\Win32;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\MSBuild\14.0\bin;C:\Program Files (x86)\MSBuild\14.0\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\VCPackages;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Performance Tools;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\NASM\;C:\iasl\;C:\adb\;C:\Users\luo__\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Users\luo__\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luo__\AppData\Local\GitHubDesktop\bin;C:\Users\luo__\AppData\Local\Microsoft\WindowsApps;;
+          PYTHON_HOME = C:\Python27\
+           PYTHONPATH = C:\vUDK2018\edk2\BaseTools\Source\Python;
+  
+  
+  !!! WARNING !!! No CYGWIN_HOME set, gcc build may not be used !!!
+  
+  Build environment: Windows-10-10.0.19041
+  Build start time: 15:52:42, Aug.24 2021
+  
+  WORKSPACE        = c:\vudk2018\edk2
+  ECP_SOURCE       = c:\vudk2018\edk2\edkcompatibilitypkg
+  EDK_SOURCE       = c:\vudk2018\edk2\edkcompatibilitypkg
+  EFI_SOURCE       = c:\vudk2018\edk2\edkcompatibilitypkg
+  EDK_TOOLS_PATH   = c:\vudk2018\edk2\basetools
+  EDK_TOOLS_BIN    = c:\vudk2018\edk2\basetools\bin\win32
+  CONF_PATH        = c:\vudk2018\edk2\conf
+  
+  
+  Architecture(s)  = IA32
+  Build target     = DEBUG
+  Toolchain        = VS2015x86
+  
+  Active Platform          = c:\vudk2018\edk2\Nt32Pkg\Nt32Pkg.dsc
+  Active Module            = c:\vudk2018\edk2\RobinPkg\Applications\Diskdump\Diskdump.inf
+  Flash Image Definition   = c:\vudk2018\edk2\Nt32Pkg\Nt32Pkg.fdf
+  
+  Processing meta-data ..... done!
+  Generating code . done!
+  Generating makefile . done!
+  Building ... c:\vudk2018\edk2\StdLib\LibC\gdtoa\gdtoa.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Signal\Signal.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Ctype\Ctype.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\PosixLib\Gen\LibGen.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Time\Time.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Locale\Locale.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Uefi\Devices\daUtility.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Uefi\Uefi.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\StdLib\StdLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\String\String.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiApplicationEntryPoint\UefiApplicationEntryPoint.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\DxeReportStatusCodeLib\DxeReportStatusCodeLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\BaseLib\BaseLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\BaseMemoryLibOptDxe\BaseMemoryLibOptDxe.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiMemoryAllocationLib\UefiMemoryAllocationLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\DxePcdLib\DxePcdLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\ShellPkg\Library\UefiShellCEntryLib\UefiShellCEntryLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Stdio\Stdio.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\LibC.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiBootServicesTableLib\UefiBootServicesTableLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\DxePrintLibPrint2Protocol\DxePrintLibPrint2Protocol.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiRuntimeServicesTableLib\UefiRuntimeServicesTableLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiDevicePathLibDevicePathProtocol\UefiDevicePathLibDevicePathProtocol.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\UefiSortLib\UefiSortLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\UefiHiiLib\UefiHiiLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiFileHandleLib\UefiFileHandleLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\UefiLib\UefiLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\ShellPkg\Library\UefiShellLib\UefiShellLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Wchar\Wchar.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Containers\ContainerLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Uefi\InteractiveIO\IIO.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Uefi\Devices\daConsole.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\DxeHobLib\DxeHobLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\DxeDebugPrintErrorLevelLib\DxeDebugPrintErrorLevelLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdeModulePkg\Library\UefiHiiServicesLib\UefiHiiServicesLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\StdLib\LibC\Uefi\Devices\daShell.inf [IA32]
+  Building ... c:\vudk2018\edk2\MdePkg\Library\DxeServicesLib\DxeServicesLib.inf [IA32]
+  Building ... c:\vudk2018\edk2\RobinPkg\Applications\Diskdump\Diskdump.inf [IA32]
+  
+  - Done -
+  Build end time: 15:52:49, Aug.24 2021
+  Build total time: 00:00:08
+  

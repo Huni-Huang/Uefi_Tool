@@ -1,0 +1,57 @@
+## @file
+# PrintScreenLogger.inf
+#
+# PrintScreenLogger registers for Crtl-PrtScn and writes the screen contents
+# to a eligible USB storage device.
+#
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = PrintScreenLogger
+  FILE_GUID                      = ea205b85-27e0-44e6-9643-7e808368550f
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = PrintScreenLoggerEntry
+  UNLOAD_IMAGE                   = PrintScreenLoggerUnload
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 ARM AARCH64
+#
+
+[Sources]
+  PrintScreenLogger.c
+  PrintScreenLogger.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  DebugLib
+  DevicePathLib
+  MemoryAllocationLib
+  PrintLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  UefiRuntimeServicesTableLib
+
+[Guids]
+
+[Protocols]
+  gEfiBlockIoProtocolGuid
+  gEfiGraphicsOutputProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiSimpleTextInputExProtocolGuid
+  gEfiUsbIoProtocolGuid
+
+[Depex]
+  gEfiGraphicsOutputProtocolGuid AND
+  gEfiSimpleTextInputExProtocolGuid
+ 
