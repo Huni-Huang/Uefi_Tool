@@ -1,0 +1,34 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Event_Timer
+  FILE_GUID                      = 0FC45541-BFFC-448F-8C6F-83944D4C7001
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+[Sources.common]
+  Event_Timer.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+  #NB2766BoardPkg_Timi/Project.dec
+
+
+[Guids]
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  BaseLib
+  PrintLib
+  ShellCEntryLib
+
+
+
+[Protocols]
+gEfiSimpleTextInputExProtocolGuid
